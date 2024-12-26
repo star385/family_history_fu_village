@@ -1,0 +1,121 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>桂东扶村朱氏六修族谱</title>
+<style type="text/css">
+body,td,th {
+	font-size: 9pt;
+	color: #006633;
+}
+body {
+	background-color: #003300;
+	margin-left: 0px;
+	margin-top: 0px;
+}
+a:link {
+	color: #0000FF;
+	text-decoration: none;
+}
+a:visited {
+	text-decoration: none;
+	color: #CC3300;
+}
+a:hover {
+	text-decoration: underline;
+	color: #FF6600;
+}
+a:active {
+	text-decoration: none;
+	color: #009933;
+}
+.table {
+	border-top-width: 6px;
+	border-top-style: solid;
+	border-top-color: #6699FF;
+}
+.table1 {
+	border-top-width: 6px;
+	border-top-style: solid;
+	border-top-color: #6699FF;
+	border-left-width: 6px;
+	border-left-style: solid;
+	border-left-color: #6699FF;
+}
+
+.filing-info {
+  font-size: 10pt;
+  color: #ffffff;
+  text-align: center;
+  cursor: pointer;
+}
+
+</style>
+<SCRIPT language=JavaScript1.2>
+
+
+
+
+window.onload = function(){
+  var filingInfo = document.getElementById('filingInfo')
+  filingInfo.addEventListener('click', function(){
+    location.href = 'https://beian.miit.gov.cn'
+  })
+
+  var speed
+  function initialize(){
+      if (window.scrollspeed!=0){
+          speed=window.scrollspeed
+          iframeId.window.scrollBy(0,speed)
+      }
+  }
+  setInterval("initialize()",10)
+
+  var iframeBox1 = document.getElementById('iframe_box1');
+  var iframeBox2 = document.getElementById('iframe_box2');
+  var iframeList = [iframeBox1, iframeBox2]
+  function setIframeHeight(list) {
+    var contentHeight = window.innerHeight-70;
+    list.forEach(element => {
+      element.style.height = `${contentHeight}px`;
+    });
+  }
+  setIframeHeight(iframeList)
+  
+}
+
+
+</SCRIPT>
+
+</head>
+<body>
+<table width="1020" border="2" align="center" cellpadding="0" cellspacing="0" bordercolor="#006699" bgcolor="#FFFFFF">
+  <!--DWLayoutDefaultTable-->
+  <tr>
+
+    <td width="314" valign="top" class="table"><table width="90%" border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td><iframe width="311" id="iframe_box1" src="菜单2.html" name="1" marginwidth=0 marginheight=0 hspace=0 vspace=0 frameborder=0  noresize="noresize" id="2" title="mainFrame" />        
+          </iframe></td>
+      </tr>
+    </table></td>
+
+    <td width="706" valign="top" class="table1"><table width="99%" border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td>
+		<tr><td bordercolor="#AAE3FF" bgcolor="#AAE3FF"><layer visibility="hide">
+<div style="width:250px" align=right>
+<a onmouseover=scrollspeed=3 onmouseout=scrollspeed=0 href="#"><img src="img/xzb1.gif" alt="向上滚动" width=85 height=20 border="0"></a>　　 
+<a onmouseover=scrollspeed=-3 onmouseout=scrollspeed=0 href="#"><img src="img/xzb2.gif" alt="向下滚动" width=85 height=20 border="0"></a></div>
+        </layer></td>
+		<tr><td>
+<iframe width="701" id="iframe_box2" src="显示.html" name="3" marginwidth=0 marginheight=0 hspace=0 vspace=0 frameborder=0 id=iframeId  title="rightFrame" />        
+          </iframe></td></tr></td>
+      </tr>
+    </table></td>
+
+  </tr>
+</table>
+<p class="filing-info" id="filingInfo">蜀ICP备2024082107号-1</p>
+</body>
+</html>
